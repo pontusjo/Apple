@@ -16,7 +16,8 @@ Route::get('/', function () {
 });
 
 Route::get('/users', ['uses' => 'UsersController@index']);
-
+Route::get('/users/create', ['uses' => 'UsersController@create']);
+Route::post('users', ['uses' => 'UsersController@store']);
 /*
 Route::get('/users', function () {
     $users = [
@@ -33,3 +34,4 @@ Route::get('/users', function () {
     ];
     return $users;
 });
+*/
