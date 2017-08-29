@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
+
+Route::get('/', ['uses' => 'PagesController@index']);
 
 Route::get('/users', ['uses' => 'UsersController@index']);
 Route::get('/users/create', ['uses' => 'UsersController@create']);

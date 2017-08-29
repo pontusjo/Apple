@@ -1,5 +1,5 @@
 <form method="POST" action="/users">
-{{!! csrf_field() !!}}
+{{ csrf_field() !}}
     <input type="text" name="name">
     <input type="email" name="email">
     <input type="password" name="password">
